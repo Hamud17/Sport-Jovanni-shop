@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+
+
+
+body{
+    font-family: $font-main;
+    background-color:  #E6e2dd;
+    color: $white;
+    font-size: 16px;
+
+} 
+a{
+    color: $white;
+
+    transition: color 0.2s ease-in;/* за какое время меняется цвет ссылки */
+
+    &:hover {/* взаимодействие с ссылкой  */
+        color: $accent;
+    }
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1140px;
+
+    &--small{
+        max-width: 840px;
+    }
+    
+}
+
+.text-right{
+    
+    text-align: right;
+}
+/* .visually-hidden{
+    color:adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0) 
+
+} */
+
+.none{
+    display: none !important;
+}
+
+.title-2{
+    font-size: 36px;
+    height: auto;
+    font-family: $font-accent;
+    color: #d48166;
+    font-weight: 700;
+
+    @include mediaTablet{
+        font-size: 28px;
+        
+    }
+}
+
+.link-bold{
+    color:$accent;
+    font-weight: 700;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}

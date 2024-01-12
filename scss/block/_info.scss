@@ -1,0 +1,35 @@
+.info{
+    position: relative;
+    font-size: 18px;
+
+    &--map, &--tel{
+        padding-left: 10px;
+
+        &::before {
+            content: "";
+            background-repeat: no-repeat;
+        }
+    }
+
+    &--tel::before{
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        width: 30px;
+        height: 30px;
+        background-image: url(/img/1220365_whatsapp_chat_communication_message_phone_icon.png); 
+        
+    }
+    &--map::before{
+        position: absolute;
+        left: -37px;
+        top: -15px;
+        width: 49px;
+        height: 49px;
+        background-image: url(/img/icons8-location-48new.png); 
+    }
+    
+    @include mediaTablet{
+        font-size: 14px;
+    }
+}
