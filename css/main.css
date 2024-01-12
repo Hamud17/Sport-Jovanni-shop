@@ -158,7 +158,7 @@ header {
   flex-direction: column; /*как располагаются  */
   justify-content: space-between; /* чтобы между контентом был пропуск */
   min-height: 840px;
-  background: url(/img/photo_2024-01-05_20-54-24.jpg);
+  background: url(img/photo_2024-01-05_20-54-24.jpg);
   background-repeat: no-repeat;
   min-height: 840px;
   background-size: cover;
